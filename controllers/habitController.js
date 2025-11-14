@@ -1,8 +1,6 @@
 const Habit = require('../models/Habit');
 
-/* --------------------------------------
-   Create Habit
------------------------------------------*/
+
 exports.createHabit = async (req, res) => {
   try {
     const data = req.body;
