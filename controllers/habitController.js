@@ -30,9 +30,7 @@ exports.createHabit = async (req, res) => {
   }
 };
 
-/* --------------------------------------
-   Get My Habits
------------------------------------------*/
+
 exports.getMine = async (req, res) => {
   try {
     const habits = await Habit.find({ ownerId: req.user.uid }).sort({ createdAt: -1 });
