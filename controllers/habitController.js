@@ -56,9 +56,7 @@ exports.getSingleHabit = async (req, res) => {
   }
 };
 
-/* --------------------------------------
-   Update Habit
------------------------------------------*/
+
 exports.updateHabit = async (req, res) => {
   try {
     const habit = await Habit.findById(req.params.id);
