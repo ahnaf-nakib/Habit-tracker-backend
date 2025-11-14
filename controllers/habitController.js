@@ -82,9 +82,7 @@ exports.updateHabit = async (req, res) => {
   }
 };
 
-/* --------------------------------------
-   Delete Habit
------------------------------------------*/
+
 exports.deleteHabit = async (req, res) => {
   try {
     const habit = await Habit.findById(req.params.id);
