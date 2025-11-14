@@ -40,9 +40,7 @@ exports.getMine = async (req, res) => {
   }
 };
 
-/* --------------------------------------
-   ⭐ GET Single Habit (For Update Page)
------------------------------------------*/
+
 exports.getSingleHabit = async (req, res) => {
   try {
     const habit = await Habit.findById(req.params.id);
