@@ -11,7 +11,7 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
-// ✅ FIX: পাবলিক রুট লোড হচ্ছে /api রুটে
+
 app.use('/api', require('./routes/public')); 
 app.use('/api/habits', require('./routes/habits')); // Assuming this handles protected routes
 
