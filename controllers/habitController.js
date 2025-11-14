@@ -141,9 +141,7 @@ exports.markComplete = async (req, res) => {
   }
 };
 
-/* --------------------------------------
-   Public Habits
------------------------------------------*/
+
 exports.getPublicHabits = async (req, res) => {
   try {
     const habits = await Habit.find({ isPublic: true }).sort({ createdAt: -1 });
